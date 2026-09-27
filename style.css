@@ -1,0 +1,238 @@
+.__ronin {
+    width: 680px;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Kanji principal */
+
+.__jp-kanji {
+    font-family: 'Noto Serif JP';
+    font-size: 38px;
+    color: #F27979;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.__jp-line {
+    width: 1px;
+    height: 80px;
+    margin: 0 auto 30px auto;
+    background: linear-gradient(transparent, #F27979, transparent);
+}
+
+/* Contenido */
+
+.__jp-content {
+    font-family: Times New Roman;
+    font-size: 15px;
+    line-height: 180%;
+    text-align: justify;
+}
+
+.__jp-content b {
+    color: #F27979;
+    font-weight: 100;
+}
+
+.__jp-content r {
+    color: #ffcc00;
+}
+
+.__jp-content i {
+    color: #F27979;
+}
+
+/* Imagen */
+
+.__jp-img {
+    margin-top: 50px;
+}
+
+/* Footer */
+
+.__jp-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.__jp-credit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.__jp-credit line {
+    flex: 1;
+    height: 1px;
+    background: #F27979;
+    display: block;
+}
+
+.__jp-sign {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: 'Playfair Display';
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #F27979;
+}
+
+.__jp-place {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 8px;
+    letter-spacing: 4px;
+    color: #777;
+}
+
+/* Avatar */
+
+.__jp-avatar {
+    width: 95px;
+    height: 95px;
+    padding: 6px;
+    border: 1px solid #F27979;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.__jp-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block;
+}
+
+/* Tarjeta hover */
+
+.__jp-card {
+    position: absolute;
+    top: 20px;
+    right: 115px;
+    width: 220px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, .95);
+    border: 1px solid #F27979;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+    z-index: 999;
+}
+
+.__jp-card kanji {
+    display: block;
+    flex-shrink: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP';
+    font-size: 24px;
+    color: #F27979;
+}
+
+.__jp-card txt {
+    display: block;
+    text-align: left;
+    font-family: 'Playfair Display';
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+}
+
+.__jp-avatar:hover .__jp-card {
+    opacity: 1;
+    transform: translateX(-5px);
+}
+
+/* Música */
+
+.__jp-music {
+    width: 300px;
+    margin: 0 auto 50px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.__jp-music i {
+    font-size: 18px;
+    color: #F27979;
+}
+
+.__jp-lyrics {
+    margin-top: 12px;
+    font-family: 'Playfair Display';
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 180%;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.__jp-music song {
+    display: block;
+    font-family: 'Playfair Display';
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F27979;
+}
+
+.__jp-artist {
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.__jp-music audio {
+    width: 140px;
+    height: 18px;
+    opacity: .7;
+}
+
+/* Sello */
+
+.__jp-seal {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    border-left: 2px solid #F27979;
+    border-right: 2px solid #F27979;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.__jp-seal span {
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
+    transition: .4s;
+}
+
+.__jp-seal:hover span {
+    color: #F27979;
+}
